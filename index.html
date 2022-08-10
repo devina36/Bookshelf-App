@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Apps</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <h2>
+            <i class="fa fa-book" style="padding-left:10px;" aria-hidden="true"></i> Bookshelf Apps
+        </h2>
+    </header>
+
+    <div class="wrapper">
+            <div class="container bg-white" id="add-todo">
+                <h2 class="container-header text-center">Add a New Book</h2>
+                <form class="form" action="#" id="form">
+                    <div class="form-group form-title">
+                        <label for="title">Book Titles</label>
+                        <input type="text" id="title" name="title" required>
+                    </div>
+                    <div class="form-group form-title">
+                        <label for="author">Author's</label>
+                        <input type="text" id="author" name="author" required>
+                    </div>
+                    <div class="form-group form-title">
+                        <label for="number">Published</label>
+                        <input type="number" id="year" name="year" required>
+                    </div>
+                    <div class="form-group form-title">
+                        <label for="checkbox">Is Completed</label>
+                        <input type="checkbox" id="iscompleted" name="iscompleted">
+                    </div>
+                    <div class="submit">
+                        <button type="submit" name="Submit" class="btn-submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> Submit</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="wrap">
+                <div class="search">
+                    <div class="wrap-search">
+                        <input type="text" id="search" onkeyup="search()" placeholder="Search by Title">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="contain">
+                        <h2 class="container-header">Unfinished Books</h2>
+                        <div class="list-item" id="todos">
+                            
+                        </div>
+                    </div>
+
+                    <div class="contain">
+                        <h2 class="container-header">Finished Books</h2>
+                        <div class="list-item" id="completed-todos">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+
+</html>
