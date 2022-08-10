@@ -22,7 +22,7 @@
 
 ## Alert after Submit
 
-![Searched Book](/img/book4.JPG)
+![Alert](/img/book4.png)
 
 # Technologies
   It consists only of HTML, CSS, and Javascript
